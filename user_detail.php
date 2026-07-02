@@ -1,6 +1,6 @@
 <?php
 // Establish database connection
-include('server.php');
+include('config/server.php');
 
 // Process form submission
 if (isset($_POST['submit'])) {
@@ -57,20 +57,20 @@ if (isset($_POST['submit'])) {
         rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/assets/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/lightbox/assets/css/lightbox.min.css" rel="stylesheet">
+    <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -78,7 +78,7 @@ if (isset($_POST['submit'])) {
     <div class="container-fluid fixed-top">
         <div class="container px-0">
             <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                <img src="img/logo.png" class="logo" alt="n">
+                <img src="assets/img/logo.png" class="logo" alt="n">
                 <a href="<?php echo $index_link; ?>" class="navbar-brand">
                     <h1 class="text-primary display-6" style="font-family: droid serif; padding-top:7%">KHANAK</h1>
                 </a>
@@ -175,7 +175,7 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="col-md-12 col-lg-6 col-xl-5">
                         <div class="position-relative">
-                            <img src="img/userimage.jpg" class="img-fluid w-80 rounded" alt="">
+                            <img src="assets/img/userimage.jpg" class="img-fluid w-80 rounded" alt="">
                         </div>
                     </div>
                 </div>
@@ -243,7 +243,7 @@ if (isset($_POST['submit'])) {
                             <p>Email: khanakjewelley@gmail.com</p>
                             <p>Phone: +0123 4567 8910</p>
                             <p>Payment Accepted</p>
-                            <img src="img/payment.png" class="img-fluid" alt="">
+                            <img src="assets/img/payment.png" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -265,11 +265,11 @@ if (isset($_POST['submit'])) {
     <!-- Copyright End -->
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="assets/lib/lightbox/assets/js/lightbox.min.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
     <script>
@@ -290,7 +290,7 @@ if (isset($_POST['submit'])) {
         });
     });
 </script>
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 <?php
-// Include the server.php file for database connection
-include('server.php');
+// Include the config/server.php file for database connection
+include('config/server.php');
 
 //Check if the user_id and product_id are provided in the POST request 
 if (isset($_POST['user_id'], $_POST['product_id'], $_POST['quantity'])) {

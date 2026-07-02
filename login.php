@@ -1,6 +1,6 @@
 <?php
 
-include('server.php');
+include('config/server.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check if username and password are set in the $_POST array
@@ -34,19 +34,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='css/logincss.css' />
-    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel='stylesheet' href='assets/css/logincss.css' />
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
     <title>Login</title>
 </head>
 
 <body>
     <div class="bglayer">
         <div class="image">
-            <img class="sideimg" src="img/jewlery.png" alt="">
+            <img class="sideimg" src="assets/img/jewlery.png" alt="">
         </div>
         <div class="bglayer2">
             <a href="index.php">
-            <img class="logo" src="img/logo.png" alt="f">
+            <img class="logo" src="assets/img/logo.png" alt="f">
             </a>
             <h2 class="login">LOGIN</h2>
             <hr class="lgunder">

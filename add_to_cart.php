@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include('server.php');
+include('config/server.php');
 
 if (isset($_GET['user_id']) && isset($_POST['product_id'])) {
     $user_id = $_GET['user_id'];

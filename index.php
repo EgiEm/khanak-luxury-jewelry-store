@@ -1,11 +1,11 @@
 <html>
-<link rel="icon" type="image/x-icon" href="img/logo.png">
+<link rel="icon" type="image/x-icon" href="assets/img/logo.png">
 </html>
 
 <?php
 
-// Include the server.php file where your database connection is defined
-include('server.php');
+// Include the config/server.php file where your database connection is defined
+include('config/server.php');
 
 // Start the session
 session_start();
@@ -89,20 +89,20 @@ if (isset($_GET['user_id'])) {
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
         
         <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/assets/css/all.css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="img/logo.png">
+        <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
 
         <!-- Libraries Stylesheet -->
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <!-- <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
+        <link href="assets/lib/lightbox/assets/css/lightbox.min.css" rel="stylesheet">
+        <!-- <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
 
 
         <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     </head>
@@ -112,7 +112,7 @@ if (isset($_GET['user_id'])) {
         <div class="container-fluid fixed-top" style="padding-left: 0;padding-right: 0;">
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <img src="img/logo.png" class = "logo" alt="n">
+                    <img src="assets/img/logo.png" class = "logo" alt="n">
                     <a href="<?php echo $index_link; ?>" class="navbar-brand"><h1 class="text-primary display-6" style=" font-family: droid serif;padding-top:7%;">KHANAK</h1></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
@@ -167,15 +167,15 @@ if (isset($_GET['user_id'])) {
 
         <!-- Hero Start -->
         <div class="your-slider-class py-5">
-            <div style="width: 1448px; height:600px;"><img src="img/slider/1.png" alt="Image 1"></div>
-            <div style="width: 1448px; height:600px;"><img src="img/slider/2.jpg" alt="Image 2"></div>
-            <div style="width: 1448px; height:600px;"><img src="img/slider/3.jpg" alt="Image 3"></div>
+            <div style="width: 1448px; height:600px;"><img src="assets/img/slider/1.png" alt="Image 1"></div>
+            <div style="width: 1448px; height:600px;"><img src="assets/img/slider/2.jpg" alt="Image 2"></div>
+            <div style="width: 1448px; height:600px;"><img src="assets/img/slider/3.jpg" alt="Image 3"></div>
         </div>
         <!-- Hero End -->
 
 
         <div class="container-fluid banner my-5 " style="padding-left: 0; padding-right: 0;">
-            <img  style="width: 1477px;" src="img/banner.png">
+            <img  style="width: 1477px;" src="assets/img/banner.png">
         </div>
 
         <!-- Featurs Section Start -->
@@ -229,7 +229,7 @@ if (isset($_GET['user_id'])) {
                     <div class="col-md-6 col-lg-4">
                         <a href="shop-cat.php?category='pendant'&user_id=<?php echo $user_id; ?>">
                             <div class="service-item bg-secondary rounded border border-secondary">
-                                <img src="img/h-pendant.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <img src="assets/img/h-pendant.jpg" class="img-fluid rounded-top w-100" alt="">
                                 <div class="px-4 rounded-bottom">
                                     <div class="service-content bg-primary text-center p-4 rounded">
                                         <h5 class="text-white" style="margin-top: 28px;">PENDANT</h5>
@@ -241,7 +241,7 @@ if (isset($_GET['user_id'])) {
                     <div class="col-md-6 col-lg-4">
                         <a href="shop-cat.php?category='necklace'&user_id=<?php echo $user_id; ?>">
                             <div class="service-item bg-dark rounded border border-dark">
-                                <img src="img/h-necklace.png" class="img-fluid rounded-top w-100" alt="">
+                                <img src="assets/img/h-necklace.png" class="img-fluid rounded-top w-100" alt="">
                                 <div class="px-4 rounded-bottom">
                                     <div class="service-content bg-light text-center p-4 rounded">
                                         <h5 class="text-primary" style="margin-top: 28px;">NECKLACE</h5>
@@ -253,7 +253,7 @@ if (isset($_GET['user_id'])) {
                     <div class="col-md-6 col-lg-4">
                         <a href="shop-cat.php?category='earrings'&user_id=<?php echo $user_id; ?>">
                             <div class="service-item bg-primary rounded border border-primary">
-                                <img src="img/h-earing.png" class="img-fluid rounded-top w-100" alt="">
+                                <img src="assets/img/h-earing.png" class="img-fluid rounded-top w-100" alt="">
                                 <div class="px-4 rounded-bottom">
                                     <div class="service-content bg-secondary text-center p-4 rounded">
                                         <h5 class="text-white" style="margin-top: 28px;">EARRING</h5>
@@ -372,7 +372,7 @@ if (isset($_GET['user_id'])) {
                             <p>Email: khanakjewelley@gmail.com</p>
                             <p>Phone: +0123 4567 8910</p>
                             <p>Payment Accepted</p>
-                            <img src="img/payment.png" class="img-fluid" alt="">
+                            <img src="assets/img/payment.png" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -399,16 +399,16 @@ if (isset($_GET['user_id'])) {
         
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="assets/lib/lightbox/assets/js/lightbox.min.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSGFpoO+hxgJlwCflT9T9UkJQ+vr8rFhBnQDn6lr1yB4" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-7P148G3JZ3sH3L5gO+2773Kz4fa89M8kF4g520iDz6YjUaXZ4HlYT8r6Z4Hxg4Jg" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-p+T4IbHJ6f6sfzLlIxOq84mGjQ5WABRh/1Hs6sLh/Jf7k7dQjR099cz6K4G/kf4w" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperassets/js/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-7P148G3JZ3sH3L5gO+2773Kz4fa89M8kF4g520iDz6YjUaXZ4HlYT8r6Z4Hxg4Jg" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/assets/js/bootstrap.min.js" integrity="sha384-p+T4IbHJ6f6sfzLlIxOq84mGjQ5WABRh/1Hs6sLh/Jf7k7dQjR099cz6K4G/kf4w" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/ffdb37c66b.js" crossorigin="anonymous"></script>
     <!-- Template Javascript -->
@@ -432,7 +432,7 @@ if (isset($_GET['user_id'])) {
 </script>
 
 
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
     </body>
 
 </html>

@@ -1,6 +1,6 @@
     <?php
     // Establish database connection
-    include('server.php');
+    include('config/server.php');
 
     // Process form submission
     if (isset($_POST['submit'])) {
@@ -41,9 +41,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign up Page</title>
-        <link rel="stylesheet" href="css/signupcss.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="icon" type="image/x-icon" href="img/logo.png">
+        <link rel="stylesheet" href="assets/css/signupcss.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/assets/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
         <script>
             function togglePassword(fieldId) {
                 var passwordField = document.getElementById(fieldId);
@@ -63,7 +63,7 @@
             <div class="bglayer">
                 <div class="form-box">
                     <a href="index.php">
-                        <img class="logo" src="img/logo.png" alt="f">
+                        <img class="logo" src="assets/img/logo.png" alt="f">
                     </a>
                     <h1 class="signup"> SIGN UP</h1>
                     <div>

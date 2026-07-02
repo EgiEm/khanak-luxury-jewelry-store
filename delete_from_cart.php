@@ -1,5 +1,5 @@
 <?php
-include('server.php');
+include('config/server.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['user_id']) && isset($_POST['product_id'])) {
     // Retrieve user_id and product_id from POST data
